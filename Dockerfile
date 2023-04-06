@@ -7,7 +7,7 @@ RUN apk --no-cache add dnsmasq
 LABEL maintainer "Zer0Power"
 
 #Volumes
-VOLUME /etc/dnsmasq.conf
+VOLUME /etc/dnsmasq
 VOLUME /etc/hosts
 
 #Expose Ports
