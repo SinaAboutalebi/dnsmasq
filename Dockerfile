@@ -10,5 +10,8 @@ LABLE maintainer "Zer0Power"
 VOLUME /etc/dnsmasq.conf
 VOLUME /etc/hosts
 
+#Expose Ports
+EXPOSE 53 53/udp
+
 #EntryPoint
 ENTRYPOINT ["dnsmasq", "-k"]
