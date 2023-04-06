@@ -4,7 +4,7 @@ FROM alpine:3.17
 RUN apk --no-cache add dnsmasq
 
 #Maintener
-LABLE maintainer "Zer0Power"
+LABEL maintainer "Zer0Power"
 
 #Volumes
 VOLUME /etc/dnsmasq.conf
