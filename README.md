@@ -1,2 +1,2 @@
 # dnsmasq
-dnsmasq service with docker
+dnsmasq service with docker.
