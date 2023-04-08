@@ -8,7 +8,7 @@ LABEL maintainer "Zer0Power"
 
 #Volumes
 VOLUME /etc/dnsmasq
-VOLUME /etc/hosts
+#VOLUME /etc/hosts
 
 #Expose Ports
 EXPOSE 53 53/udp
