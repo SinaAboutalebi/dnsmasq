@@ -14,4 +14,5 @@ VOLUME /etc/dnsmasq
 EXPOSE 53 53/udp
 
 #EntryPoint
-ENTRYPOINT ["dnsmasq", "-k"]
+ENTRYPOINT ["dnsmasq", "-kq", "--hostsdir", "/opt"]
+
