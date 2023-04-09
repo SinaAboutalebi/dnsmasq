@@ -1,13 +1,32 @@
+#Log All DNS Quieries 
 log-queries
 log-async
+
+#Define Host list
 addn-hosts=/opt/list
+
+#Set Cache
 cache-size=10000
-domain-needed
+
+#Never Forward Plain Names
+domain-needed 
+
+#Prevent Forwarding Dns Reverse Queries To Upstream
 bogus-priv
+
+#Ignore /etc/resolve.conf
 no-resolv
-expand-hosts
-domain=zero.lan
+
+#Add Domain To HostNames
+#expand-hosts
+
+#Domain To Be Added If `expand-host` Is Set
+#domain=zero.lan
+
+#Local Domain To Be Served From Host List 
 local=/zero.lan/
+
+#Set Dns Resolvers 
 server=8.8.8.8
 server=1.1.1.1
 server=8.8.4.4
