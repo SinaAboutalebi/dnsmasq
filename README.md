@@ -32,7 +32,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To run you local dns server with your custom domain with dnsmasq in docker follow these simple steps.
+To run your local dns server with your custom domain with dnsmasq in docker follow these simple steps.
 
 
 ### Installation
