@@ -14,6 +14,9 @@
     <a href="https://github.com/Zer0Power/dnsmasq"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+        <img src="https://img.shields.io/docker/pulls/zer0power/dnsmasq.svg?style=flat-square&logo=docker&cacheSeconds=3600" width="130"> 
+    <br />
+    <br />
     <a href="https://github.com/Zer0Power/dnsmasq">View Demo</a>
     ·
     <a href="https://github.com/Zer0Power/dnsmasq/issues">Report Bug</a>
@@ -23,3 +26,5 @@
     <a href="https://hub.docker.com/r/zer0power/dnsmasq">Docker Page</a>
     </p>
 </div>
+
+
