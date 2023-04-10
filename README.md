@@ -27,4 +27,36 @@
     </p>
 </div>
 
+<br />
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+To run you local dns server with your custom domain with dnsmasq in docker follow these simple steps.
+
+
+### Installation
+
+1. Pull the image.
+   ```sh
+   docker pull zer0power/dnsmasq
+   ```
+   <br />
+2. Create and run the docker container, Change `YOUR-HOSTS-PATH` to your host list in my case is `/opt/docker/volumes/dnsmasq/list`, Change `YOUR-CONFIG-addn-hosts` to your config `addn-hosts` path in this case is `/opt/list`, Replace `YOUR-CONFIG-PATH` to your `dnsmasq.conf` path in your host.<br />
+Note : create your host list before mounting volume , `exmp: touch /opt/docker/volumes/dnsmasq/list`
+   ```sh
+   docker run -itd --name dnsmasq --hostname dns -p 53:53/udp -v YOUR-HOSTS-PATH:YOUR-CONFIG-addn-hosts -v YOUR-CONFIG-PATH:/etc/dnsmasq.conf zer0power/dnsmasq
+   ```
+   <br />
+   <b>Note : if you want to build image your self follow these steps then do step 2.</b>
+   
+3. Clone this repository.
+   ```sh
+   git clone https://github.com/Zer0Power/dnsmasq.git
+   ```
+4. Build image, Replace `IMAGE_NAME` with whatever you like and `IMAGE-TAG`.
+   ```sh
+   docker build -t IMAGE-NAME:IMAGE-TAG ./
+   ```
+
+   
