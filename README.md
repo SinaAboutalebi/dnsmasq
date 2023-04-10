@@ -82,7 +82,7 @@ domain-needed
 #Prevent Forwarding Dns Reverse Queries To Upstream
 bogus-priv
 
-#Ignore /etc/resolve.conf
+#Ignore /etc/resolv.conf
 no-resolv
 
 #Add Domain To HostNames
