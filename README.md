@@ -8,7 +8,7 @@
   <h3 align="center">Docker DNSMASQ</h3>
 
   <p align="center">
-    dnsmasq service builtin docker container
+    dnsmasq service runing in  docker container
     <br />
     <br />
     <a href="https://github.com/Zer0Power/dnsmasq"><strong>Explore the docs »</strong></a>
