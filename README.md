@@ -58,5 +58,47 @@ Note : create your host list before mounting volume , `exmp: touch /opt/docker/v
    ```sh
    docker build -t IMAGE-NAME:IMAGE-TAG ./
    ```
+   <br />
+   <br />
+   
+## Configuration Example
+
+To be able to run the dnsmasq, you will need a configuration file. This is a basic example.
+
+```
+#Log All DNS Quieries 
+log-queries
+log-async
+
+#Define Host list
+addn-hosts=/opt/list
+
+#Set Cache
+cache-size=10000
+
+#Never Forward Plain Names
+domain-needed 
+
+#Prevent Forwarding Dns Reverse Queries To Upstream
+bogus-priv
+
+#Ignore /etc/resolve.conf
+no-resolv
+
+#Add Domain To HostNames
+#expand-hosts
+
+#Domain To Be Added If `expand-host` Is Set
+#domain=zero.lan
+
+#Local Domain To Be Served From Host List 
+local=/zero.lan/
+
+#Set Dns Resolvers 
+server=8.8.8.8
+server=1.1.1.1
+server=8.8.4.4
+```
+
 
    
